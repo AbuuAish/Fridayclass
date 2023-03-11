@@ -1,0 +1,12 @@
+'''This code removes duplicates from any given list in 2 ways.
+Using append method to a newly created list
+Using a dictionary with unique keys and also creating list from the dictionary.'''
+# Date: 11th March 2023
+
+items = [2, 3, 4, 6, 8, 2, 6, 3, 5, 9, 3, 6, 10, 2, 7, 10]
+items2 = []
+for num in items:
+    if num not in items2:
+        items2.append(num)
+print(items2)
+print(list(dict.fromkeys(items)))
